@@ -24,6 +24,15 @@ section {
     margin: 20px;
 }
 
+a {
+    color: #9db9a8;
+}
+
+a:visited {
+    color: #9db9a8;
+}
+
+
 footer {
     text-align: center;
     background-color: white;
@@ -43,14 +52,10 @@ footer {
 .top-nav a {
     float: left;
     display: block;
-    color: #9db9a8;
-    padding: 15px;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-}
-
-.top-nav a:visited {
-    color: #9db9a8;
 }
 
 .top-nav a:hover {
