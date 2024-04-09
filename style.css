@@ -8,7 +8,6 @@ hr {
     width:90%;
     color:#677d6f;
 }
-
 header {
     margin: 20px;
     padding: 20px;
@@ -16,16 +15,22 @@ header {
 }
 
 .content {
-    padding:20px
+    padding:20px;
 }
 
 section {
-    padding: 20px;
+    padding: 50px 20px;
     margin: 20px;
+}
+
+h2 {
+    color: #677d6f;
+    text-align: center;
 }
 
 a {
     color: #9db9a8;
+    text-decoration: none;
 }
 
 a:visited {
@@ -81,6 +86,7 @@ footer {
     .top-nav a.icon {
         float: right;
         display: block;
+        padding-right: 10px;
     }
 }
 
