@@ -1,3 +1,10 @@
+:root {
+    --mainBackground: white;
+    --accentDark: #677d6f;
+    --accentBright: #9db9a8;
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -6,7 +13,7 @@ body {
 
 hr {
     width:90%;
-    color:#677d6f;
+    color:var(--accentDark);
 }
 header {
     margin: 20px;
@@ -23,32 +30,41 @@ section {
     margin: 20px;
 }
 
-h2 {
-    color: #677d6f;
+h1, h2, h3 {
+    color: var(--accentDark);
     text-align: center;
 }
 
 a {
-    color: #9db9a8;
+    color: var(--accentBright);
     text-decoration: none;
 }
 
+.svgIcon{
+    color: var(--accentBright);
+    padding: 16px;
+
+}
+.svgIcon:hover {
+    color: var(--accentDark);
+}
+
 a:visited {
-    color: #9db9a8;
+    color: var(--accentBright);
 }
 
 
 footer {
     text-align: center;
-    background-color: white;
-    color: #677d6f;
+    background-color: var(--mainBackground);
+    color: var(--accentDark);
     padding: 10px;
     bottom: 0;
     width: 100%;
 }
 
 .top-nav {
-    background-color: white;
+    background-color: var(--mainBackground);
     text-align: center;
     position: fixed;
     width: 100%;
@@ -64,13 +80,13 @@ footer {
 }
 
 .top-nav a:hover {
-    color: #677d6f;
-    text-decoration: underline #9db9a8;
+    color: var(--accentDark);
+    text-decoration: underline var(--accentBright);
 }
 
 .top-nav a.active {
-    color: #677d6f;
-    text-decoration: underline #9db9a8;
+    color: var(--accentDark);
+    text-decoration: underline var(--accentBright);
 }
 
 .top-nav .icon {
@@ -78,7 +94,7 @@ footer {
 }
 
 .fa_custom{
-    color: #9db9a8;
+    color: var(--accentBright);
 }
 
 @media screen and (max-width: 600px) {
