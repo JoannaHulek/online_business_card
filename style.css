@@ -1,10 +1,43 @@
+/* color palette */
 :root {
+    /* Color inspiration */
+    --PantoneGraniteGreen: #86a293;
+
     --mainBackground: white;
-    --accentDark: #677d6f;
-    --accentBright: #9db9a8;
+    --brightAccent: #86a293;
+    --darkAccent: #586960;
+    --grayAccent: gray;
 }
 
+/* main tags styling */
+a {
+    color: var(--brightAccent);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--darkAccent);
+}
+a:visited {
+    color: var(--brightAccent);
+}
+
+i{
+    color: var(--darkAccent);
+}
+
+h1, h2, h3, h4 {
+    color: var(--darkAccent);
+    text-align: center;
+}
+
+hr {
+    width:90%;
+    color:var(--darkAccent);
+}
+
+/* main sections styling */
 body {
+    background: var(--mainBackground);
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -21,52 +54,10 @@ section {
     margin: 20px;
 }
 
-hr {
-    width:90%;
-    color:var(--accentDark);
-}
-
-a {
-    color: var(--accentBright);
-    text-decoration: none;
-}
-a:visited {
-    color: var(--accentBright);
-}
-
-h1, h2, h3, h4 {
-    color: var(--accentDark);
-    text-align: center;
-}
-
-i{
-    color: var(--accentDark);
-}
-
-table, th, td {
-    border:none;
-}
-th {
-    vertical-align: top;
-    text-align:left;
-    color: var(--accentDark);
-}
-td.tableContent{
-    padding: 0 5% 15px 5%;
-}
-
-.svgIcon{
-    color: var(--accentBright);
-    padding: 16px;
-}
-.svgIcon:hover {
-    color: var(--accentDark);
-}
-
 footer {
     text-align: center;
     background-color: var(--mainBackground);
-    color: var(--accentDark);
+    color: var(--darkAccent);
     padding: 10px;
     bottom: 0;
     width: 100%;
@@ -87,18 +78,17 @@ footer {
     font-size: 17px;
 }
 .top-nav a:hover {
-    color: var(--accentDark);
-    text-decoration: underline var(--accentBright);
+    text-decoration: underline var(--brightAccent);
 }
 .top-nav a.active {
-    color: var(--accentDark);
-    text-decoration: underline var(--accentBright);
+    color: var(--darkAccent);
+    text-decoration: underline var(--brightAccent);
 }
 .top-nav .icon {
     display: none;
 }
 .fa_custom{
-    color: var(--accentBright);
+    color: var(--brightAccent);
 }
 
 @media screen and (max-width: 600px) {
@@ -121,4 +111,26 @@ footer {
         display: block;
         text-align: left;
     }
+}
+
+/* table styling */
+table, th, td {
+    border:none;
+}
+th {
+    vertical-align: top;
+    text-align:left;
+    color: var(--darkAccent);
+}
+td.tableContent{
+    padding: 0 5% 15px 5%;
+}
+
+/* svg icons styling */
+.svgIcon{
+    color: var(--brightAccent);
+    padding: 16px;
+}
+.svgIcon:hover {
+    color: var(--darkAccent);
 }
